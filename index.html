@@ -16,6 +16,8 @@
         .product-card p { color: #666; margin: 10px 0; }
         .price { font-size: 20px; font-weight: bold; color: #2d2d2d; margin: 15px 0; }
         .buy-button { margin: 20px 0; }
+        .shipping-section { max-width: 800px; margin: 40px auto; padding: 20px; background: #f8f8f8; }
+        .shipping-section h2 { text-align: center; font-size: 28px; }
         footer { text-align: center; padding: 40px; background: #f8f8f8; color: #666; font-size: 14px; }
         @media (max-width: 768px) { .products-grid { grid-template-columns: 1fr; } }
     </style>
@@ -27,34 +29,38 @@
     </header>
 
     <section class="products-grid">
-        <!-- French Orange -->
         <div class="product-card">
-            <img src="french-orange.jpg" alt="French Orange Scrub">
+            <img src="french-orange.jpg" alt="French Orange">
             <h3>French Orange</h3>
             <p>Zesty and uplifting natural salt scrub with orange essential oils.</p>
             <div class="price">$5 CAD</div>
             <div class="buy-button">
-                <!-- Replace with your PayPal form -->
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" name="submit" alt="Buy Now">
-                </form>
+                <!-- Your PayPal button here -->
             </div>
         </div>
 
-        <!-- Repeat for other 5 products (Calming Lavender, etc.) with same structure -->
-
-        <!-- Example: Calming Lavender -->
         <div class="product-card">
-            <img src="calming-lavender.jpg" alt="Calming Lavender Scrub">
+            <img src="calming-lavender.jpg" alt="Calming Lavender">
             <h3>Calming Lavender</h3>
             <p>Soothing lavender for relaxed hands and feet.</p>
             <div class="price">$5 CAD</div>
-            <div class="buy-button"> <!-- PayPal form --> </div>
+            <div class="buy-button">
+                <!-- Your PayPal button here -->
+            </div>
         </div>
 
-        <!-- Add the rest similarly -->
+        <!-- Add the other 4 products the same way -->
+    </section>
+
+    <section class="shipping-section">
+        <h2>Shipping & Handling</h2>
+        <p>We ship within Canada only.</p>
+        <ul>
+            <li>Flat rate: $5 CAD per order</li>
+            <li>Free shipping on orders over $50 CAD</li>
+            <li>Processed & shipped in 3-5 business days</li>
+            <li>Delivery: 5-10 business days (Canada Post)</li>
+        </ul>
     </section>
 
     <footer>
